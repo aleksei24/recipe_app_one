@@ -10,11 +10,20 @@
     "type": "git",
     "url": "git+https://github.com/aleksei24/recipe_app_one.git"
   },
-  "keywords": [],
+  "keywords": [
+    "recipe-app",
+    "recipe",
+    "webpack",
+    "babel"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/aleksei24/recipe_app_one/issues"
   },
-  "homepage": "https://github.com/aleksei24/recipe_app_one#readme"
+  "homepage": "https://github.com/aleksei24/recipe_app_one#readme",
+  "devDependencies": {
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  }
 }

@@ -1,5 +1,7 @@
 const path = require('path');
-const { webpack } = require('webpack');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const { webpack } = require('webpack');
 
 // ==============================================
 
@@ -20,4 +22,11 @@ module.exports = {
       },
     ],
   },
+
+  plugins: [
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      title: 'Recipe App',
+    }),
+  ],
 };

@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "browserslist": "> 0.5%, last 2 versions, Firefox ESR, not dead",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aleksei24/recipe_app_one.git"

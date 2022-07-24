@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack"
+    "webpack": "webpack",
+    "build": "webpack --config production.config.js"
   },
   "browserslist": "> 0.5%, last 2 versions, Firefox ESR, not dead",
   "repository": {

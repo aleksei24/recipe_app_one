@@ -11,7 +11,9 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dev'),
-    clean: true,
+    clean: {
+      dry: true,
+    },
   },
 
   module: {

@@ -9,5 +9,5 @@ body.append(APP);
 
 const MAIN_HEADLINE = document.createElement('h1');
 MAIN_HEADLINE.setAttribute('id', 'main-headline');
-MAIN_HEADLINE.textContent = 'Hello';
+MAIN_HEADLINE.textContent = 'Hello!';
 APP.append(MAIN_HEADLINE);

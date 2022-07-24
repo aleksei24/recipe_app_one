@@ -11,6 +11,7 @@ module.exports = {
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'production'),
+    clean: true,
   },
 
   module: {
@@ -22,9 +23,12 @@ module.exports = {
   },
 
   plugins: [
-    new HtmlWebpackPlugin({
+    new HTMLWebpackPlugin({
       filename: 'index.html',
       title: 'Recipe App',
+      meta: {
+        viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
+      },
     }),
   ],
 };

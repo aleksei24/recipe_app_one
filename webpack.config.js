@@ -9,8 +9,9 @@ module.exports = {
   entry: './src/index.js',
 
   output: {
-    filename: 'main.js',
-    path: path.resolve(__dirname, 'production'),
+    filename: '[name].js',
+    path: path.resolve(__dirname, 'dev'),
+    clean: true,
   },
 
   module: {
@@ -22,9 +23,18 @@ module.exports = {
   },
 
   plugins: [
-    new HtmlWebpackPlugin({
+    new HTMLWebpackPlugin({
       filename: 'index.html',
       title: 'Recipe App',
     }),
   ],
+
+  devServer: {
+    open: true,
+    port: 8080,
+    liveReload: true,
+    hot: false,
+  },
+
+  devtool: 'inline-source-map',
 };

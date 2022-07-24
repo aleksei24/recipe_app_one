@@ -34,7 +34,8 @@ module.exports = {
     port: 8080,
     liveReload: true,
     hot: false,
+    static: './dev/',
   },
 
-  devtool: 'inline-source-map',
+  devtool: 'eval-source-map',
 };

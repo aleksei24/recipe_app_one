@@ -1,1 +1,1 @@
-import './script/hi';
+import './script/view';

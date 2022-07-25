@@ -39,3 +39,22 @@ const MEALS = document.createElement('div');
 MEALS.setAttribute('id', 'meals');
 MEALS.setAttribute('class', 'meals');
 APP.append(MEALS);
+
+const MEAL_POPUP = document.createElement('div');
+MEAL_POPUP.setAttribute('id', 'meal-popup');
+MEAL_POPUP.setAttribute('class', 'meal-popup');
+MEAL_POPUP.hidden = true;
+APP.append(MEAL_POPUP);
+
+const MEAL_POPUP_CONTAINER = document.createElement('div');
+MEAL_POPUP_CONTAINER.setAttribute('class', 'meal-popup__container');
+const CLOSE_BTN = document.createElement('button');
+CLOSE_BTN.setAttribute('type', 'button');
+CLOSE_BTN.setAttribute('id', 'close-btn');
+CLOSE_BTN.innerHTML = 'Close';
+
+const MEAL_INFO = document.createElement('div');
+MEAL_INFO.setAttribute('class', 'meal-info');
+
+MEAL_POPUP.append(MEAL_POPUP_CONTAINER);
+MEAL_POPUP_CONTAINER.append(CLOSE_BTN, MEAL_INFO);

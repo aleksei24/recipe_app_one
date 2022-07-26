@@ -75,6 +75,7 @@ function showMealInfo(mealData) {
 
   MEAL_INFO.appendChild(mealEl);
   MEAL_POPUP.hidden = false;
+  MEALS.hidden = true;
 }
 
 HEADER_SEARCH_BUTTON.addEventListener('click', async () => {
@@ -92,6 +93,7 @@ HEADER_SEARCH_BUTTON.addEventListener('click', async () => {
 
 CLOSE_BTN.addEventListener('click', () => {
   MEAL_POPUP.hidden = true;
+  MEALS.hidden = false;
 });
 
 getRandomMeal();

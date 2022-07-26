@@ -55,6 +55,7 @@ CLOSE_BTN.innerHTML = 'Close';
 
 const MEAL_INFO = document.createElement('div');
 MEAL_INFO.setAttribute('class', 'meal-info');
+MEAL_INFO.setAttribute('id', 'meal-info');
 
 MEAL_POPUP.append(MEAL_POPUP_CONTAINER);
 MEAL_POPUP_CONTAINER.append(CLOSE_BTN, MEAL_INFO);

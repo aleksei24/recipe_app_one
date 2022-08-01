@@ -17,8 +17,8 @@ HEADER.append(MAIN_HEADLINE);
 
 const HEADER_SEARCH = document.createElement('div');
 const HEADER_SEARCH_LABEL = document.createElement('label');
-const HEADER_SEARCH_INPUT = document.createElement('input');
-const HEADER_SEARCH_BUTTON = document.createElement('button');
+export const HEADER_SEARCH_INPUT = document.createElement('input');
+export const HEADER_SEARCH_BUTTON = document.createElement('button');
 HEADER_SEARCH.append(HEADER_SEARCH_LABEL, HEADER_SEARCH_INPUT, HEADER_SEARCH_BUTTON);
 HEADER.append(HEADER_SEARCH);
 HEADER_SEARCH.setAttribute('class', 'header__search search-header');
@@ -35,12 +35,12 @@ HEADER_SEARCH_BUTTON.setAttribute('class', 'search-header__btn btn');
 HEADER_SEARCH_BUTTON.setAttribute('type', 'button');
 HEADER_SEARCH_BUTTON.innerHTML = 'Search';
 
-const MEALS = document.createElement('div');
+export const MEALS = document.createElement('div');
 MEALS.setAttribute('id', 'meals');
 MEALS.setAttribute('class', 'meals');
 APP.append(MEALS);
 
-const MEAL_POPUP = document.createElement('div');
+export const MEAL_POPUP = document.createElement('div');
 MEAL_POPUP.setAttribute('id', 'meal-popup');
 MEAL_POPUP.setAttribute('class', 'meal-popup');
 MEAL_POPUP.hidden = true;
@@ -48,12 +48,12 @@ APP.append(MEAL_POPUP);
 
 const MEAL_POPUP_CONTAINER = document.createElement('div');
 MEAL_POPUP_CONTAINER.setAttribute('class', 'meal-popup__container');
-const CLOSE_BTN = document.createElement('button');
+export const CLOSE_BTN = document.createElement('button');
 CLOSE_BTN.setAttribute('type', 'button');
 CLOSE_BTN.setAttribute('id', 'close-btn');
 CLOSE_BTN.innerHTML = 'Close';
 
-const MEAL_INFO = document.createElement('div');
+export const MEAL_INFO = document.createElement('div');
 MEAL_INFO.setAttribute('class', 'meal-info');
 MEAL_INFO.setAttribute('id', 'meal-info');
 

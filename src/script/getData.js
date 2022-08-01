@@ -1,9 +1,11 @@
-const MEALS = document.querySelector('#meals');
-const HEADER_SEARCH_INPUT = document.querySelector('#search');
-const HEADER_SEARCH_BUTTON = document.querySelector('#searchBtn');
-const CLOSE_BTN = document.querySelector('#close-btn');
-const MEAL_POPUP = document.querySelector('#meal-popup');
-const MEAL_INFO = document.querySelector('#meal-info');
+import {
+  MEALS,
+  MEAL_INFO,
+  MEAL_POPUP,
+  CLOSE_BTN,
+  HEADER_SEARCH_BUTTON,
+  HEADER_SEARCH_INPUT,
+} from './view';
 
 async function getRandomMeal() {
   try {

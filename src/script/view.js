@@ -1,5 +1,5 @@
 const BODY = document.body;
-const APP = document.createElement('div');
+export const APP = document.createElement('div');
 APP.setAttribute('id', 'app');
 APP.setAttribute('class', 'app');
 BODY.append(APP);

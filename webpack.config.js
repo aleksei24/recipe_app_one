@@ -1,12 +1,5 @@
 const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
-const postcssJs = require('postcss-js');
-const autoprefixer = require('autoprefixer');
-
-const prefixer = postcssJs.sync([autoprefixer]);
-const style = prefixer({
-  userSelect: 'none',
-});
 
 // ==============================================
 
@@ -27,27 +20,6 @@ module.exports = {
     rules: [
       {
         test: /\.js$/i,
-      },
-      {
-        test: '/.style.js$/',
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              importLoaders: 2,
-            },
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-              postcssOptions: {
-                parser: 'postcss-js',
-              },
-              execute: true,
-            },
-          },
-        ],
       },
     ],
   },

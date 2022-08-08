@@ -20,6 +20,9 @@ async function getRandomMeal() {
 }
 
 async function getMealsBySearch(meal) {
+  if (typeof meal !== 'string') {
+    return;
+  }
   try {
     const response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${meal}`);
     const responseData = await response.json();

@@ -1,0 +1,12 @@
+.app {
+  margin: 0 auto;
+  width: 48em;
+}
+
+.meal {
+  &__header {
+    img {
+      pointer-events: auto;
+    }
+  }
+}

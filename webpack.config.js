@@ -1,5 +1,6 @@
 const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 // ==============================================
 
@@ -30,6 +31,7 @@ module.exports = {
       title: 'Recipe App',
       favicon: './src/fav/ladle.png',
     }),
+    new MiniCssExtractPlugin(),
   ],
 
   devServer: {

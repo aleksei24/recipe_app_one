@@ -21,6 +21,7 @@ module.exports = {
     rules: [
       {
         test: /\.js$/i,
+        exclude: /node_modules/,
       },
     ],
   },

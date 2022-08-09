@@ -1,6 +1,7 @@
 $maxWidth: em(768);
 $minWidth: em(200);
-$colourFont: #151515;
+$colour: #151515;
+$bgColour: #fff;
 $fontFamily: 'Habibi';
 
 *,
@@ -12,6 +13,7 @@ $fontFamily: 'Habibi';
   padding: 0;
   list-style-type: none;
   text-decoration: none;
+  outline: 1px solid red;
 }
 
 html,
@@ -22,5 +24,34 @@ body {
   padding: 0;
   min-width: $minWidth;
   position: relative;
-  color: $colourFont;
+  color: $colour;
+}
+body {
+  background-color: $bgColour;
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+a:focus {
+  outline: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+input,
+button {
+  font-family: $fontFamily;
+}
+button {
+  cursor: pointer;
+  border-radius: 5px;
 }

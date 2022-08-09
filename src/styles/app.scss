@@ -1,12 +1,20 @@
 .app {
-  margin: 0 auto;
   max-width: em(768);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: em(10);
 }
 
-.meal {
-  &__header {
-    img {
-      cursor: pointer;
-    }
-  }
+.header {
+  display: grid;
+  grid-auto-rows: minmax(em(50), auto);
+  gap: em(10);
+  text-align: center;
+  margin-bottom: em(20);
+}
+
+.search-header {
+  display: grid;
+  grid-auto-rows: minmax(em(40), auto);
+  gap: em(6);
 }

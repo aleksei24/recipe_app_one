@@ -3,4 +3,4 @@ import './script/view';
 import './script/getData';
 
 // style
-import './styles/app.scss';
+import './styles/style.scss';

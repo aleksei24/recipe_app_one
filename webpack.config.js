@@ -24,7 +24,7 @@ module.exports = {
       },
       {
         test: /\.(s[ac]|c)ss$/i,
-        use: ['css-loader', 'sass-loader'],
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
   },
@@ -33,7 +33,7 @@ module.exports = {
     new HTMLWebpackPlugin({
       filename: 'index.html',
       title: 'Recipe App',
-      favicon: './src/fav/ladle.png',
+      favicon: './src/fav/ladle-icon.png',
     }),
   ],
 

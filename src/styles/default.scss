@@ -1,0 +1,26 @@
+$maxWidth: em(768);
+$minWidth: em(200);
+$colourFont: #151515;
+$fontFamily: 'Habibi';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: $minWidth;
+  position: relative;
+  color: $colourFont;
+}

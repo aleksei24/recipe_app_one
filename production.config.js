@@ -1,6 +1,7 @@
 const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const PostcssPresetEnv = require('postcss-preset-env');
 
 // ==============================================
 
@@ -25,7 +26,19 @@ module.exports = {
       },
       {
         test: /\.s[ac]ss/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'sass-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [PostcssPresetEnv()],
+              },
+            },
+          },
+        ],
       },
     ],
   },

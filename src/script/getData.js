@@ -38,7 +38,6 @@ function addMeal(mealData, random = false) {
   meal.classList = 'meal';
   meal.innerHTML = `
   <div class="meal__header" id="put-pic-four">
-  ${random ? `<span class="random">Random Recipe</span>` : ''}
     <img src='${mealData.strMealThumb}' alt='${mealData.Meal}'
   </div>
   <div class="meal__body">

@@ -1,5 +1,6 @@
 const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 // ==============================================
 
@@ -20,6 +21,11 @@ module.exports = {
     rules: [
       {
         test: /\.js$/i,
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.s[ac]ss/i,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
     ],
   },
@@ -31,8 +37,9 @@ module.exports = {
       meta: {
         viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
       },
-      favicon: './src/fav/ladle.png',
+      favicon: './src/fav/ladle-icon.png',
     }),
+    new MiniCssExtractPlugin(),
   ],
 
   devtool: 'source-map',

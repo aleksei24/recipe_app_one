@@ -66,15 +66,23 @@ function showMealInfo(mealData) {
   }
 
   mealEl.innerHTML = `
-    <h2>${mealData.strMeal}</h2>
-    <img src="${mealData.strMealThumb}" alt="${mealData.strMeal}" />
-    <h5>${mealData.strArea} cuisine</h5>
-    <ul>
-      ${ingredients.map((el) => `<li>${el}</li>`).join('')}
-    </ul>
-    <p>
-      ${mealData.strInstructions}
-    </p>
+    <div class="meal-info__image">
+      <h2>${mealData.strMeal}</h2>
+      <img src="${mealData.strMealThumb}" alt="${mealData.strMeal}" />
+      <h5>${mealData.strArea} cuisine</h5>
+    </div>
+    <div class="meal-info__ingred">
+      <ul>
+        <span>Ingredients:</span>
+        ${ingredients.map((el) => `<li>${el}</li>`).join('')}
+      </ul>
+    </div>
+    <div class="meal-info__instruct">
+      <span>Instruction:</span>
+      <p>
+        ${mealData.strInstructions}
+      </p>
+    </div>
   `;
 
   MEAL_INFO.appendChild(mealEl);

@@ -56,12 +56,11 @@
     left: em(10);
     padding: em(10);
     background-color: $bgColour;
+    max-width: 100%;
     > h5 {
-      text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
-      width: 100%;
-      // font-size: rem(20);
+      text-overflow: ellipsis;
       @include adapt(font-size, 21, 16, 1);
     }
   }
